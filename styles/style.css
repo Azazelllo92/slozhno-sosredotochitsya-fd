@@ -23,6 +23,8 @@
   display: grid;
   min-block-size: 100vh;
   padding: 10px;
+  grid-template-rows: 1fr min-content 1fr;
+  align-items: center;
 }
 
 .decorate {
@@ -85,7 +87,6 @@
 
 .header_menu {
   justify-self: end;
-  margin-block-start: 60px;
 }
 
 .header_menu_list {
@@ -129,16 +130,14 @@
   letter-spacing: 0%;
   color: var(--title-color);
   text-shadow: 4px 4px 0 var(--shadow-color);
-  margin-block-start: 65px;
 }
 
 .header_text {
   font-weight: 700;
   max-block-size: 117px;
-  margin-block-start: 55px;
-  margin-block-end: 66px;
   color: #000028;
   background: var(--accent-color);
+  align-items: center;
 }
 
 .main {
