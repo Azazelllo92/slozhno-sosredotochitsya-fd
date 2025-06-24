@@ -216,6 +216,7 @@
 .title_decor {
   color: var(--h3-color);
   background: var(--accent-color);
+  max-block-size: fit-content;
 }
 
 .footer {
@@ -243,9 +244,18 @@
     padding-inline-start: 0;
   }
 
+  .header_menu {
+    margin-inline-end: 10px;
+  }
+
+  .header_title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
   .header_text {
     justify-self: end;
     inline-size: clamp(364px, calc(100% / 2 - 10px), 491px);
+    padding-inline-end: 30px;
     margin-inline-end: 10px;
   }
 
@@ -254,9 +264,7 @@
     inset-block-start: 20px;
   }
 
-  .header_title {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  }
+  
 
   .section {
     grid-template-columns: clamp(236px, calc(100% / 3.25), 315px) 1fr;
@@ -296,7 +304,8 @@
   .header_menu {
     justify-self: center;
     align-self: start;
-    margin-block-start: 10px;
+    margin-block-start: 5px;
+    margin-inline-end: 0px;
   }
 
   .header_menu_list {
@@ -304,7 +313,8 @@
   }
 
   .header_text {
-    max-block-size: 70px;
+    max-block-size: fit-content;
+    padding-inline-end: 0px;
   }
 
   .section {
