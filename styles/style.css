@@ -85,13 +85,13 @@
 
 .header_menu {
   justify-self: end;
-  margin-block-start: 65px;
+  margin-block-start: 60px;
 }
 
 .header_menu_list {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 8px;
 }
 
 .header__theme-menu-button {
@@ -135,7 +135,7 @@
 .header_text {
   font-weight: 700;
   max-block-size: 117px;
-  margin-block-start: 45px;
+  margin-block-start: 55px;
   margin-block-end: 66px;
   color: #000028;
   background: var(--accent-color);
