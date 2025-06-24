@@ -246,11 +246,7 @@
   .header_text {
     justify-self: end;
     inline-size: clamp(364px, calc(100% / 2 - 10px), 491px);
-  }
-
-  .header_menu {
-    margin-block-start: 170px;
-    margin-block-end: 70px;
+    margin-inline-end: 10px;
   }
 
   .rec {
@@ -299,9 +295,8 @@
 
   .header_menu {
     justify-self: center;
-    margin-inline-start: 20px;
+    align-self: start;
     margin-block-start: 10px;
-    margin-block-end: 215px;
   }
 
   .header_menu_list {
