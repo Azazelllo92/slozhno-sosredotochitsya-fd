@@ -207,6 +207,11 @@
 
 .paragraf_title {
   font-weight: 700;
+  font-size: inherit;
+}
+
+.section_how_title {
+    margin-block-end: 20px;
 }
 
 .title_decor {
@@ -223,7 +228,7 @@
 
 .footer_title {
   font-weight: 700;
-  font-size: 116px;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 83%;
   color: var(--footer-text-color);
   text-shadow: 2px 2px var(--shadow-color);
@@ -266,10 +271,6 @@
     grid-column-start: span 2;
   }
 
-  .section_how_title {
-    margin-block-end: 20px;
-  }
-
   .section_how {
     grid-column-start: 2;
   }
@@ -300,7 +301,7 @@
   .header_menu {
     justify-self: center;
     margin-inline-start: 20px;
-    margin-block-start: 0;
+    margin-block-start: 10px;
     margin-block-end: 215px;
   }
 
