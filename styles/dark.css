@@ -15,6 +15,7 @@
   --text-color: #F1B2CE;
   --accent-color: #ff0070;
   --title-color:#DB00FF;
+  --header_text:#000028;
   --shadow-color:#ff0070;
   --h2-color: #ff0070;
   --h3-color: #000028;
@@ -23,4 +24,23 @@
   --button-hover-color: #FF007066;
   --footer-text-color:#DB00FF;
   --rec-visibility: visible;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+     --bg-color: #000028;
+  --bg-image: url(../images/cover-image-dark.png);
+  --text-color: #F1B2CE;
+  --accent-color: #ff0070;
+  --title-color:#DB00FF;
+  --header_text:#000028;
+  --shadow-color:#ff0070;
+  --h2-color: #ff0070;
+  --h3-color: #000028;
+  --decor-color:#FF0070;
+  --button-color:#ff0070;
+  --button-hover-color: #FF007066;
+  --footer-text-color:#DB00FF;
+  --rec-visibility: visible;
+  }
 }

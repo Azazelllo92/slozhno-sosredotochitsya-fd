@@ -14,14 +14,14 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 23.4px;
-  letter-spacing: 0%;
 
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
 
 .header {
   display: grid;
-  min-block-size: 100vh;
+  block-size: 100vh;
+  min-block-size: 668px;
   padding: 10px;
   grid-template-rows: 1fr min-content 1fr;
   align-items: center;
@@ -70,7 +70,6 @@
   content: "REC";
   color: #ff0070;
   line-height: 25px;
-  letter-spacing: 0%;
   text-align: center;
 
 }
@@ -92,7 +91,7 @@
 .header_menu_list {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
 }
 
 .header__theme-menu-button {
@@ -127,15 +126,13 @@
   font-weight: 700;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 83%;
-  letter-spacing: 0%;
   color: var(--title-color);
   text-shadow: 4px 4px 0 var(--shadow-color);
 }
 
 .header_text {
-  font-weight: 700;
-  max-block-size: 117px;
-  color: #000028;
+  font-weight: bold;
+  color: var(--header_text);
   background: var(--accent-color);
   align-items: center;
 }
@@ -165,17 +162,21 @@
 
 .section_list_item {
   display: grid;
+  grid-auto-rows:max-content;
   gap: 10px;
 }
 
 .link {
   text-decoration: none;
-   text-shadow: 2px 2px 0 var(--shadow-color);
+  text-shadow: 2px 2px 0 var(--shadow-color);
 
 }
 
 .link:hover {
-  text-decoration: underline;
+ outline: none;
+  border: none;
+  border-bottom: 1px solid var(--text-color);
+  
 }
 
 .link:focus {
@@ -213,15 +214,20 @@
     margin-block-end: 20px;
 }
 
+.section_how_paragraf_title {
+  font-weight: normal;
+}
+
 .title_decor {
   color: var(--h3-color);
   background: var(--accent-color);
-  max-block-size: fit-content;
+  block-size: inherit;
 }
 
 .footer {
   display: grid;
-  min-block-size: 100vh;
+  block-size: 100vh;
+  min-block-size: 668px;
   padding: 10px;
   place-items: center;
 }
@@ -245,7 +251,7 @@
   }
 
   .header_menu {
-    margin-inline-end: 10px;
+    margin-inline-start: 10px;
   }
 
   .header_title {
@@ -254,8 +260,9 @@
 
   .header_text {
     justify-self: end;
-    inline-size: clamp(364px, calc(100% / 2 - 10px), 491px);
+    inline-size: clamp(364px, calc(100% / 2 - 20px), 491px);
     padding-inline-end: 30px;
+    margin-block-end: 12px;
     margin-inline-end: 10px;
   }
 
@@ -263,8 +270,6 @@
     inset-inline-end: 28px;
     inset-block-start: 20px;
   }
-
-  
 
   .section {
     grid-template-columns: clamp(236px, calc(100% / 3.25), 315px) 1fr;
@@ -297,6 +302,10 @@
   .gallery_list_item:nth-child(3) {
     grid-row-start: span 2;
   }
+
+  .footer {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
 }
   
 @media (width>=1024px) {
@@ -324,4 +333,8 @@
   .section_what {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  
 }
+
+
