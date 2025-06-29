@@ -316,6 +316,7 @@
     justify-self: center;
     align-self: start;
     margin-block-start: 5px;
+    margin-inline-end: 0px;
   }
 
   .header_menu_list {
