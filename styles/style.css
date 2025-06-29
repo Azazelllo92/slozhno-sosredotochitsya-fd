@@ -315,8 +315,9 @@
   .header_menu {
     justify-self: center;
     align-self: start;
-    margin-block-start: 5px;
+    margin-block-start: 8px;
     margin-inline-end: 0px;
+    margin-inline-start: 5px;
   }
 
   .header_menu_list {
